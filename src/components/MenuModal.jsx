@@ -21,7 +21,7 @@ const MenuModal = ({ item, onClose }) => {
           />
         </div>
         <div className="w-full md:w-1/2 p-8 flex flex-col">
-          <div className="flex-grow overflow-y-auto">
+          <div className="grow overflow-y-auto">
             <h2 className="text-3xl font-bold tracking-widest text-amber-400 mb-4">
               {item.name}
             </h2>

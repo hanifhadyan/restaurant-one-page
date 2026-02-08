@@ -18,9 +18,10 @@ const menuData = [
           "Delicate rolls filled with fresh vegetables and minced pork, fried to a perfect golden crisp. Served with a sweet chili dipping sauce.",
 
         price: "18",
-
-        image: "/images/menu/spring-rolls.jpg",
-
+        image:
+          "https://placehold.co/600x400/1a1a1a/d4af37?text=Crispy+Spring+Rolls",
+      },
+      {
         id: 2,
         name: "Steamed Dumpling Selection",
 
@@ -29,7 +30,8 @@ const menuData = [
 
         price: "25",
 
-        image: "/images/menu/steamed-dumplings.jpg",
+        image:
+          "https://placehold.co/600x400/1a1a1a/d4af37?text=Steamed+Dumplings",
       },
     ],
   },
@@ -46,8 +48,9 @@ const menuData = [
 
         price: "98",
 
-        image: "/images/menu/peking-duck.jpg",
-
+        image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Peking+Duck",
+      },
+      {
         id: 4,
         name: "Wok-Fried Wagyu Beef",
 
@@ -56,8 +59,9 @@ const menuData = [
 
         price: "120",
 
-        image: "/images/menu/wagyu-beef.jpg",
-
+        image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Wagyu+Beef",
+      },
+      {
         id: 5,
         name: "Steamed Garoupa",
 
@@ -66,7 +70,8 @@ const menuData = [
 
         price: "Market Price",
 
-        image: "/images/menu/steamed-garoupa.jpg",
+        image:
+          "https://placehold.co/600x400/1a1a1a/d4af37?text=Steamed+Garoupa",
       },
     ],
   },
@@ -83,7 +88,7 @@ const menuData = [
 
         price: "15",
 
-        image: "/images/menu/mango-sago.jpg",
+        image: "https://placehold.co/600x400/1a1a1a/d4af37?text=Mango+Sago",
       },
     ],
   },
@@ -108,11 +113,11 @@ const Menu = () => {
       <div className="container mx-auto px-4">
         {/* Intro – narrow centered block, similar to reference layout */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-[11px] tracking-[0.35em] text-amber-400 uppercase">
+          <h2 className="text-sm tracking-[0.35em] text-amber-400 uppercase md:text-base">
             The Menu
           </h2>
-          <div className="w-20 h-px bg-amber-500/60 mx-auto mt-4" />
-          <p className="mt-6 text-[13px] leading-relaxed text-neutral-300">
+          <div className="w-24 h-px bg-amber-500/60 mx-auto mt-6" />
+          <p className="mt-8 text-base leading-relaxed text-neutral-300 md:text-lg md:leading-loose">
             Explore a curated selection of dishes representing the pinnacle of
             Cantonese culinary artistry. Each plate is prepared with meticulous
             technique and ingredients selected to meet the expectations of a

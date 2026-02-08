@@ -7,15 +7,15 @@ const About = () => {
         {/* Narrow centered column, similar to the original reference layout */}
         <div className="max-w-3xl mx-auto">
           {/* Heading */}
-          <div className="text-center mb-10">
-            <h2 className="text-[11px] tracking-[0.35em] text-amber-400 uppercase">
+          <div className="text-center mb-12">
+            <h2 className="text-sm tracking-[0.35em] text-amber-400 uppercase md:text-base">
               About Us
             </h2>
-            <div className="w-20 h-px bg-amber-500/60 mx-auto mt-4" />
+            <div className="w-24 h-px bg-amber-500/60 mx-auto mt-6" />
           </div>
 
           {/* Body copy */}
-          <div className="space-y-5 text-[13px] leading-relaxed text-neutral-300">
+          <div className="space-y-6 text-base leading-relaxed text-neutral-300 text-justify md:text-lg md:leading-loose">
             <p>
               The city celebrate enlivened taste of Hong Kong that has been
               respected for generations. Bringing the true taste of Chinese high
@@ -41,7 +41,7 @@ const About = () => {
           </div>
 
           {/* Reservation link, left-aligned within the text column */}
-          <div className="mt-8 text-left">
+          <div className="mt-10 text-left">
             <a
               href="https://wa.me/6281234567890"
               target="_blank"

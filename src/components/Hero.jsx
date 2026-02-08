@@ -1,60 +1,66 @@
 import React from "react";
 
+const HERO_IMAGE_URL = "/images/hero/restaurant-hero.png";
+
 const Hero = () => {
   return (
-    <section
-      id="top"
-      className="relative h-[70vh] min-h-[480px] border-b border-neutral-800 overflow-hidden"
-    >
-      {/* Background image – replace with real photo of the restaurant */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/hero/restaurant-hero.jpg')",
-        }}
+    <div className="relative h-screen w-full overflow-hidden">
+      {/* Background Image */}
+      <img
+        src={HERO_IMAGE_URL}
+        alt="House of Yuen Restaurant"
+        className="absolute inset-0 h-full w-full object-cover"
       />
 
-      {/* Dark gradient overlay for readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-black/90" />
+      {/* Dark Elegant Overlay */}
+      <div className="absolute inset-0 bg-linear-to-b from-black/40 via-black/50 to-black/60"></div>
 
-      {/* Content */}
-      <div className="relative h-full">
-        <div className="container mx-auto h-full px-4 flex flex-col justify-center">
-          <div className="max-w-xl">
-            <p className="text-[11px] tracking-[0.3em] uppercase text-amber-300 mb-4">
-              Cantonese Fine Dining
-            </p>
+      {/* Content Container */}
+      <div className="relative z-10 flex h-full items-center justify-center px-6 text-center">
+        <div className="max-w-4xl">
+          {/* Tagline */}
+          <p className="mb-6 text-xs tracking-[0.35em] text-amber-400/90 md:text-sm">
+            CANTONESE FINE DINING
+          </p>
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl text-amber-100 tracking-[0.25em] uppercase">
-              House of Yuen
-            </h1>
+          {/* Main Heading */}
+          <h1 className="mb-8 font-serif text-4xl tracking-[0.2em] text-amber-100 md:text-5xl lg:text-6xl">
+            HOUSE OF YUEN
+          </h1>
 
-            <p className="mt-6 text-sm text-neutral-200 leading-relaxed">
-              A contemporary expression of classic Cantonese cuisine within a
-              five-star setting. Crafted for intimate celebrations, discreet
-              business gatherings, and occasions that demand quiet excellence.
-            </p>
+          {/* Decorative Line */}
+          <div className="mx-auto mb-8 h-px w-32 bg-linear-to-r from-transparent via-amber-500 to-transparent"></div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="https://wa.me/6281234567890"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button-primary"
-              >
-                Reserve via WhatsApp
-              </a>
-              <a
-                href="#menu"
-                className="text-[11px] tracking-[0.3em] uppercase text-neutral-200 hover:text-amber-300"
-              >
-                View the Menu
-              </a>
-            </div>
+          {/* Subtitle */}
+          <p className="mx-auto mb-10 max-w-2xl text-sm leading-relaxed tracking-wide text-gray-200 md:text-base lg:text-lg">
+            A contemporary expression of classic Cantonese cuisine within a
+            five-star setting. Crafted for intimate celebrations, discreet
+            business gatherings, and occasions that demand quiet excellence.
+          </p>
+
+          {/* Call to Action Buttons */}
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6 mt-5">
+            <a
+              href="https://wa.me/6281234567890"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-amber-600 px-8 py-3 text-xs font-medium tracking-widest text-neutral-900 transition-all duration-300 hover:bg-amber-700 hover:text-black hover:shadow-lg hover:shadow-amber-900/50"
+            >
+              RESERVE VIA WHATSAPP
+            </a>
+            <a
+              href="#menu"
+              className="text-xs font-medium tracking-widest text-gray-300 transition-colors duration-300 hover:text-amber-400"
+            >
+              VIEW THE MENU
+            </a>
           </div>
         </div>
       </div>
-    </section>
+
+      {/* Bottom Fade */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-black/80 to-transparent"></div>
+    </div>
   );
 };
 
