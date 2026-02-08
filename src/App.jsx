@@ -24,7 +24,7 @@ function App() {
     <div className="App">
       <Header />
 
-      <main>
+      <main className="pt-[73px]">
         <Hero />
         <About />
 
